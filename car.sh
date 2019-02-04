@@ -1,7 +1,7 @@
 #!/bin/bash
-gcc ./server.c -o ./server_program
-gcc ./client.c -o ./client_program
-x-terminal-emulator -e "./server_program"
+gcc ./inf136714_s.c -o ./server_program
+gcc ./inf136714_c.c -o ./client_program
+gnome-terminal -e "./server_program"
 if [ "$#" -ne 0 ] ; then
-for i in $(seq 1 $1); do x-terminal-emulator -e "./client_program"; done
+for i in $(seq 1 $1); do gnome-terminal -e "./client_program"; done
 fi
