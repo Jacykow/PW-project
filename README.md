@@ -19,12 +19,12 @@ struct srvresponse{
     char message[M];
 } response;
 ```
-- sygnał = 10: rejestracja "<login>|<hasło>"
-- sygnał = 11: logowanie "<login>|<hasło>"
-- sygnał = 12: stworzenie tematu "<nazwa tematu>"
-- sygnał = 13: przesłanie wiadomości do tematu "<nazwa tematu>|<treść wiadomości>"
-- sygnał = 14: odczytanie wiadomości z tematu "<nazwa tematu>"
-- sygnał = 15: zasubskrybowanie tematu "<nazwa tematu>"
+- sygnał = 10: rejestracja "login|hasło"
+- sygnał = 11: logowanie "login|hasło"
+- sygnał = 12: stworzenie tematu "nazwa tematu"
+- sygnał = 13: przesłanie wiadomości do tematu "nazwa tematu|treść wiadomości"
+- sygnał = 14: odczytanie wiadomości z tematu "nazwa tematu"
+- sygnał = 15: zasubskrybowanie tematu "nazwa tematu"
 
 ### Opis programu
 
